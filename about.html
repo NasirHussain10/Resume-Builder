@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - About</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fade-in animation */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Home button style */
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #3B82F6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #1D4ED8;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-teal-300 via-teal-500 to-blue-600 min-h-screen relative">
+
+    <!-- Home Button -->
+    <a href="index.html" class="home-button">Home</a>
+
+    <!-- About Section -->
+    <section class="text-center py-16 fade-in">
+        <h1 class="text-5xl font-bold text-white mb-4">About Our Resume Builder</h1>
+        <p class="text-lg text-white max-w-2xl mx-auto">
+            Welcome to our Resume Builder! We help you create a professional and visually appealing resume in minutes.
+            Choose from a variety of templates, and customize it to your needs with ease.
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 py-8 fade-in">
+        <!-- Feature 1 Card with Gradient -->
+        <div class="bg-gradient-to-r from-teal-400 to-teal-600 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h2 class="text-2xl font-semibold text-white mb-2">Easy to Make</h2>
+            <p class="text-white">Our platform offers a clean and simple interface, making it easy for anyone to create a professional resume.</p>
+        </div>
+
+        <!-- Feature 2 Card with Gradient -->
+        <div class="bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h2 class="text-2xl font-semibold text-white mb-2">Create Resume</h2>
+            <p class="text-white">Choose from a wide range of templates designed to suit your professional style and career goals.</p>
+        </div>
+
+        <!-- Feature 3 Card with Gradient -->
+        <div class="bg-gradient-to-r from-indigo-400 to-indigo-600 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h2 class="text-2xl font-semibold text-white mb-2">Fully Responsive</h2>
+            <p class="text-white">Effortlessly personalize your resume with easy-to-use tools to fit your career aspirations.</p>
+        </div>
+    </section>
+
+    <script>
+        // Add fade-in effect when the page reloads
+        window.addEventListener('load', function () {
+            document.querySelectorAll('.fade-in').forEach((element) => {
+                element.classList.add('fade-in');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

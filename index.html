@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #6EE7B7, #3B82F6);
+        }
+
+        /* Custom Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+   <!-- Navbar -->
+<nav class="bg-gradient-to-r from-green-400 to-blue-600 shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Home button link -->
+            <link rel="icon" href="images/favicon.png" type="image/png">
+            
+            <!-- Logo Image -->
+            <a href="index.html" class="text-2xl font-bold text-white flex items-center">
+                <img src="images/favicon.png" alt="Resume Builder Logo" class="h-8 mr-2">
+                Resume Builder
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-white hover:text-gray-200">Home</a>
+                <a href="#features" class="text-white hover:text-gray-200">Features</a>
+                <a href="about.html" class="text-white hover:text-gray-200">About Us</a>
+                <a href="login.html" class="text-white hover:text-gray-200">Login</a>
+                <a href="signup.html" class="text-white hover:text-gray-200">Sign Up</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menuButton" class="text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-gradient-to-r from-green-400 to-blue-600 text-white space-y-4 px-6 py-4">
+            <a href="index.html" class="block hover:text-gray-200">Home</a>
+            <a href="#features" class="block hover:text-gray-200">Features</a>
+            <a href="about.html" class="block hover:text-gray-200">About Us</a>
+            <a href="login.html" class="block hover:text-gray-200">Login</a>
+            <a href="signup.html" class="block hover:text-gray-200">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-green-400 to-blue-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-5xl font-extrabold text-gray-100 fade-in">Craft Your Professional Resume</h2>
+            <p class="mt-4 text-lg text-gray-200">Build a standout resume in just a few clicks with our powerful tools
+                and templates.</p>
+            <!-- Updated Button -->
+            <a href="login.html"
+                class="mt-6 inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-500 transition">Create
+                Resume</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gradient-to-r from-green-400 to-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-100">Why Choose Us?</h2>
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-gradient-to-r from-green-300/90 to-blue-400/90 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-600 hover:text-white">
+                    <div class="flex items-center justify-center text-green-700 mb-4 transition duration-500">
+                        <i class="fas fa-user-friends text-4xl hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 hover:text-white">User-Friendly Interface</h3>
+                    <p class="mt-2 text-gray-700 hover:text-gray-100">
+                        Easily navigate through our tools to create your resume effortlessly.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="bg-gradient-to-r from-green-300/90 to-blue-400/90 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-600 hover:text-white">
+                    <div class="flex items-center justify-center text-blue-700 mb-4 transition duration-500">
+                        <i class="fas fa-paint-brush text-4xl hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 hover:text-white">Customizable Templates</h3>
+                    <p class="mt-2 text-gray-700 hover:text-gray-100">
+                        Choose from a variety of stunning templates that fit your style.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="bg-gradient-to-r from-green-300/90 to-blue-400/90 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-600 hover:text-white">
+                    <div class="flex items-center justify-center text-yellow-700 mb-4 transition duration-500">
+                        <i class="fas fa-file-download text-4xl hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 hover:text-white">Download in Multiple Formats</h3>
+                    <p class="mt-2 text-gray-700 hover:text-gray-100">
+                        Easily export your resume in PDF or Word formats.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; 2024 Resume Builder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

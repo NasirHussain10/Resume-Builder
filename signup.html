@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Button -->
+    <div class="home-button-container">
+        <a href="index.html" class="home-button">Home</a>
+    </div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="textbox">
+                    <input type="text" id="newUsernameEmail" placeholder="Username or Email" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="newPassword" placeholder="Password" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p id="error-message" style="color: red;"></p>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
